@@ -1,31 +1,28 @@
 'use client';
 import HomeIcon from '@mui/icons-material/Home';
 import WorkIcon from '@mui/icons-material/Work';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import EmailIcon from '@mui/icons-material/Email';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
+import { Button } from './ui/button';
 
-import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "./ui/menubar";
 
 export const Header = () => {
     return (
-        <header className="flex items-center justify-center h-24">
-            <Menubar>
-              <MenubarMenu>
-                <MenubarTrigger>
-                    <HomeIcon />
-                </MenubarTrigger>
-                <MenubarTrigger>
-                <WorkIcon/>
-                </MenubarTrigger>
-                <MenubarTrigger>
-                <MailOutlineIcon/>
-                </MenubarTrigger>
-                <MenubarTrigger>  
-                <AssignmentIndIcon/>
-                </MenubarTrigger>
-              </MenubarMenu>
-            </Menubar>
+        <header className="flex bg-[#1e1852] items-center justify-center h-24 ">
+          <Button className="mr-2" variant="custom">
+            <HomeIcon />
+          </Button>
+          <Button className="mr-2" variant="custom">
+            <WorkIcon />
+          </Button>
+          <Button className="mr-2" variant="custom">
+            <EmailIcon />
+          </Button>
+          <Button variant="custom">
+            <AutoStoriesIcon /> 
+          </Button>
+        
         </header>
     )
 
