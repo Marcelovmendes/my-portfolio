@@ -9,8 +9,8 @@ import { LanguageToggle } from "./linguage-toggle";
 
 export const Header = () => {
   return (
-    <header className="flex">
-      <div className="flex bg-[#1e1852] items-center justify-end h-24 w-[60%]">
+    <header className="flex bg-gradient-to-b from-[#1a143d] to-[#222067]">
+      <div className="flex items-center justify-end h-24 w-[60%]">
         <Button className="mr-2" variant="custom">
           <HomeIcon />
         </Button>

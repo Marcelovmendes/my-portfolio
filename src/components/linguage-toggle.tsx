@@ -4,7 +4,7 @@ import { LanguageContext, LANGUAGES } from "../contexts/linguage-context";
 export const LanguageToggle = () => {
   const { language, setLanguage } = useContext(LanguageContext);
   return (
-    <div className="flex bg-[#1e1852] items-center justify-center h-24 w-[40%]">
+    <div className="flex items-center justify-center h-24 w-[40%]">
       <button
         className={`text-white ${
           language === LANGUAGES.EN ? "focus:outline-none" : "opacity-50"
